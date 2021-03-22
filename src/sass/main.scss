@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/_utilities.scss";
+
+@import "components/_card.scss";
+@import "components/composition";
+@import "components/_button.scss";
+@import "components/form";
+
+@import "layouts/grid";
+@import "layouts/header";
+
+@import "pages/home";
+
+
+
+
+
+
+
+
+

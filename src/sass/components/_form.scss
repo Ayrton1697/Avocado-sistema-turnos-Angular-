@@ -1,0 +1,45 @@
+.reserva-form{
+
+        background-color: white;
+        text-align: center;
+        font-size: $default-font-size;
+        width: 55%;
+        margin: 0 auto;
+        padding: 3rem;
+        border: none;
+    input{
+        background-color:$color-primary-light;    
+        display:block;
+        margin: 0 auto;
+        border-radius: 10rem;
+        text-decoration: none;
+        height: 3rem;
+        border: none;
+        outline: none;
+        border-bottom: black;
+        text-align: center;
+        width: 100%;
+    
+    }
+    button{
+        background-color: green;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        font-size: $default-font-size;
+        color: $color-white;
+        border: none;
+        transition: all .2s;
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
+        outline: none;
+        text-transform: uppercase;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:active{
+            border:none;
+            transform: translateY(3px);
+            box-shadow: 0 1rem 1rem rgba($color-black, 0.3);
+        }
+    }
+}

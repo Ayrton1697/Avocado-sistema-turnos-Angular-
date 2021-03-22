@@ -1,0 +1,18 @@
+.navbar, .navbar-brand{
+	font-size: 1.5rem;
+}
+.turnos-list{
+	position: relative;
+	clear: both;
+}
+.notification{
+	background-color: #1dd11d;
+	position: absolute;
+	color: white;
+	top: 50%;
+	left: 50%;
+	width: max-content;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 1px .5rem 1rem #ccc;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avocado company</title>
+</head>
+<body>
+  <section class="header">
+      <header class="header">
+          <div class="header__text">
+              <h1 class="heading-primary">
+                  <span class="heading-primary--prim">Avocado</span>
+                  <span class="heading-primary--sub">Company</span>
+                </h1>
+                <a href="" class="bttn bttn--white">Reserva tu turno</a> 
+               
+          </div>
+        </header>
+  </section>
+  <section class="section-about">
+      <div class=" u-center-text u-margin-bottom-big">
+          <h2 class="heading__secondary">Quienes somos</h2> 
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+            <h2 class="heading__secondary--card u-margin-bottom-small">Avocados.</h2>
+            <p class="paragraph">Avocados. 
+               Los amamos. Todo lo hacemos en base a avocados: smoothies, comidas, tartas, salsas, ensaladas,
+               todo lo que te puedeas imaginar; como dijimos: amamos los avocados.
+               Amamos los avocados. Todo lo hacemos en base a avocados: smoothies, comidas, tartas, salsas, ensaladas,
+               todo lo que te puedeas imaginar; como dijimos: amamos los avocados.</p>
+        </div>
+        <div class="col-1-of-2">
+          <div class="composition">
+               <img src="../assets/images/foto4.jpg" alt="" class="composition__photo composition__photo--1">
+               <img src="../assets/images/foto5.jpg" alt="" class="composition__photo composition__photo--2">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section-menu">
+  </section>
+
+  <section class="section-reserva">
+        <div class=" u-center-text u-margin-bottom-big">
+          <h2 class="heading__secondary">Reserva tu turno</h2>
+        </div>
+        <p class="u-center-text paragraph u-margin-bottom-small">Reserva tu turno desde tu casa para poder almorzar o cenar en nuestras sucursales!</p>
+
+              <form class="reserva-form u-center-text u-margin-top-big" #turnoForm="ngForm" (ngSubmit)="onSubmit(turnoForm)"> 
+
+                <div class="row">
+                  <div class="col-1-of-2">
+                 
+                    <input type="text" name="name" #name="ngModel" [(ngModel)]="turno.user_name" placeholder="Nombre">
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-1-of-2">
+              
+                  <input type="email" name="email" #email="ngModel" [(ngModel)]="turno.user_email" placeholder="Email">
+                </div>
+               <div class="col-1-of-2">
+                
+                <input type="text" name="telefono" #phone="ngModel" [(ngModel)]="turno.user_phone" placeholder="Telefono">  
+               </div>
+              </div>
+
+               <div class="row">
+                 <div class="col-1-of-2">
+                  
+                  <input type="date" name="date" #fecha="ngModel" [(ngModel)]="turno.fecha" placeholder="Fecha"> 
+                 </div>
+                 <div class="col-1-of-2">
+                  
+                  <input type="time" name="time" #name="ngModel" [(ngModel)]="turno.hora" placeholder="Hora"> 
+                </div>
+               </div>
+               <button type="submit" class="bttn-form bttn-form--green ">Reserva</button>
+              </form>
+       
+  </section>
+</body>
+</html>

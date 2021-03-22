@@ -1,0 +1,30 @@
+<admin></admin>
+<br>
+<h1>Turnos Rechazados</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Email</th>
+      <th scope="col">Personas</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Accion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let turno of rejectedBookings">
+      <th scope="row">{{turno.id}}</th>
+      <td>{{turno.user_name}}</td>
+      <td>{{turno.user_email}}</td>
+      <td>{{turno.cantidad_personas}}</td>
+      <td>{{turno.user_phone}}</td>
+      <td>{{turno.fecha}}</td>
+      <td><button class="btn btn-danger" 
+        (click)="eliminar(turno.id)">X</button></td>
+    </tr>
+
+  </tbody>
+</table>

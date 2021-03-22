@@ -1,0 +1,25 @@
+.header{
+	height: 100vh;
+	background-image: linear-gradient(
+		to right,
+		rgba(149, 237, 149, 0.653),
+		rgba(105, 229, 142, 0.66)
+		),
+	url(assets/images/foto2.jpg);
+	background-size: cover;
+	background-position: top;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh,0 100%);
+	text-align: center;
+
+	&__text{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: $color-white;
+	text-align: center;
+
+}
+
+
+}
